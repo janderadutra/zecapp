@@ -1,123 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Zeca App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-        h1, h2 {
-            color: #0056b3;
-        }
-        h1 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 10px;
-        }
-        h2 {
-            margin-top: 30px;
-        }
-        p {
-            text-align: justify;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade – Zeca</title>
+  <meta name="description" content="Política de Privacidade do aplicativo Zeca." />
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #111827;      /* gray-900 */
+      --muted: #94a3b8;     /* slate-400 */
+      --text: #e5e7eb;      /* gray-200 */
+      --accent: #22d3ee;    /* cyan-400 */
+      --accent-2: #38bdf8;  /* sky-400 */
+      --link: #60a5fa;      /* blue-400 */
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: linear-gradient(180deg, var(--bg), #0b1024 30%, #0a0f21 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem 5rem;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    .badge { 
+      display: inline-block; 
+      font-size: .8rem; 
+      letter-spacing: .04em; 
+      color: #0b1324; 
+      background: linear-gradient(90deg, var(--accent), var(--accent-2)); 
+      padding: .35rem .65rem; 
+      border-radius: 9999px; 
+      font-weight: 700; 
+    }
+    h1 {
+      font-size: clamp(1.8rem, 3.3vw, 2.6rem);
+      margin: .75rem 0 .25rem;
+      line-height: 1.2;
+    }
+    .subtitle { color: var(--muted); margin: 0; }
+
+    nav.toc {
+      margin: 2rem auto 2.5rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      box-shadow: 0 8px 30px rgba(0,0,0,.35);
+      border-radius: 16px;
+      padding: 1rem 1.25rem;
+    }
+    nav.toc b { display:block; margin-bottom:.35rem; }
+    nav.toc a { color: var(--link); text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+    nav.toc ul { margin: .5rem 0 0; padding-left: 1.25rem; }
+
+    section.card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      box-shadow: 0 10px 40px rgba(0,0,0,.35);
+      border-radius: 18px;
+      padding: 1.25rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+    section.card h2 {
+      margin-top: .25rem;
+      font-size: clamp(1.25rem, 2.3vw, 1.6rem);
+    }
+    p, li { color: #dbeafe; }
+    ul { margin-top: .5rem; }
+
+    a { color: var(--link); }
+    .muted { color: var(--muted); }
+
+    footer {
+      margin-top: 3rem; 
+      padding-top: 1.5rem; 
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+      text-align: center;
+    }
+    .small { font-size: .92rem; }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      padding: .75rem 1rem;
+      background: rgba(34,211,238, .06);
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <span class="badge" aria-label="Documento oficial">Política de Privacidade</span>
+      <h1>Zeca – Aplicativo</h1>
+      <p class="subtitle">Transparência sobre o tratamento de dados pessoais no app Zeca.</p>
+      <p class="muted small">Última atualização: 26 de agosto de 2025</p>
+    </header>
 
-<div class="container">
-    <h1>Política de Privacidade do Zeca</h1>
-    <p>
-        Prezado usuário,
-    </p>
-    <p>
-        Obrigado por utilizar o Zeca. Esta Política de Privacidade tem como objetivo informar, de forma clara e transparente, como seus dados são tratados ao utilizar nosso aplicativo. Caso tenha dúvidas ou deseje mais informações, você pode entrar em contato conosco a qualquer momento pelo e-mail: <a href="mailto:suporte@zecaapp.com.br">suporte@zecaapp.com.br</a>.
-    </p>
-    <p>
-        Esta política aplica-se exclusivamente ao aplicativo Zeca baixado pela Google Play Store, por meio do seguinte link oficial: <a href="https://play.google.com/store/apps/details?id=co.zeca.app&hl=pt_BR" target="_blank">https://play.google.com/store/apps/details?id=co.zeca.app&hl=pt_BR</a>
-    </p>
-    <p>
-        O uso do app obtido por outros meios não está coberto por esta Política de Privacidade.
-    </p>
+    <nav class="toc" aria-label="Sumário">
+      <b>Sumário</b>
+      <ul>
+        <li><a href="#escopo">Escopo e contato</a></li>
+        <li><a href="#coleta">1. Informações coletadas</a></li>
+        <li><a href="#tratamento">2. Como tratamos suas informações</a></li>
+        <li><a href="#compartilhamento">3. Compartilhamento de dados</a></li>
+        <li><a href="#pro">4. Versão PRO</a></li>
+        <li><a href="#contato">5. Contato</a></li>
+        <li><a href="#isencao">6. Isenção de responsabilidade</a></li>
+      </ul>
+    </nav>
 
-    <h2>1. INFORMAÇÕES COLETADAS</h2>
-    <p>
-        Durante o uso do aplicativo, poderemos coletar as seguintes informações:
-    </p>
-    <ul>
-        <li><strong>Informações de Conta (Login via Google):</strong> Para oferecer funcionalidades como a assinatura da Versão PRO e o backup de dados, permitimos que você crie uma conta utilizando o Login do Google (Firebase). Ao se registrar, coletamos seu nome e endereço de e-mail associados à sua conta Google.</li>
+    <section id="escopo" class="card" aria-labelledby="escopo-heading">
+      <h2 id="escopo-heading">Escopo e contato</h2>
+      <p>Prezado usuário,</p>
+      <p>Obrigado por utilizar o Zeca. Esta Política de Privacidade tem como objetivo informar, de forma clara e transparente, como seus dados são tratados ao utilizar nosso aplicativo. Caso tenha dúvidas ou deseje mais informações, você pode entrar em contato a qualquer momento pelo e‑mail: <a href="mailto:suporte@zecaapp.com.br">suporte@zecaapp.com.br</a>.</p>
+      <p>Esta política aplica-se exclusivamente ao aplicativo Zeca baixado pela Google Play Store, por meio do seguinte link oficial: <a href="https://play.google.com/store/apps/details?id=co.zeca.app&hl=pt_BR" target="_blank" rel="noopener">Zeca na Google Play</a>.</p>
+      <p>O uso do app obtido por outros meios não está coberto por esta Política de Privacidade.</p>
+    </section>
+
+    <section id="coleta" class="card" aria-labelledby="coleta-heading">
+      <h2 id="coleta-heading">1. Informações coletadas</h2>
+      <ul>
+        <li><strong>Informações de Conta (Login via Google):</strong> Para oferecer funcionalidades como a assinatura da Versão PRO e o backup de dados, permitimos que você crie uma conta utilizando o Login do Google (Firebase). Ao se registrar, coletamos seu nome e endereço de e‑mail associados à sua conta Google.</li>
         <li><strong>Informações sobre chamadas recebidas:</strong> O app captura notificações de chamadas de corridas, viagens ou entregas enviadas por aplicativos compatíveis, com o único objetivo de gerar estatísticas locais para o usuário.</li>
         <li><strong>Leitura da tela:</strong> Para identificar oportunidades de corridas, o Zeca realiza a leitura de tela em momentos específicos, detectando cartões de ofertas nos aplicativos suportados.</li>
-        <li><strong>Dados para Backup (Exclusivo para Versão PRO):</strong> Para usúarios da Versão PRO, as estatísticas geradas no aplicativo podem ser salvas manualmente para nossos servidores para um backup temporário. O usuário tem total controle para iniciar, restaurar ou excluir o backup a qualquer momento.</li>
+        <li><strong>Dados para Backup (Exclusivo para Versão PRO):</strong> Para usuários da Versão PRO, as estatísticas geradas no aplicativo podem ser salvas manualmente em nossos servidores para um backup temporário. O usuário tem total controle para iniciar, restaurar ou excluir o backup a qualquer momento.</li>
         <li><strong>Dados para Anúncios (Exclusivo para Versão Gratuita):</strong> Para manter o app gratuito, utilizamos anúncios personalizados através do serviço Google AdMob. Dados sobre o uso do app podem ser coletados e processados por esse serviço, respeitando suas políticas.</li>
-    </ul>
-    <p>
-        <strong>Aplicativos suportados:</strong>
-    </p>
-    <ul>
-        <li>Uber Driver</li>
-        <li>99 Motorista</li>
-        <li>InDrive</li>
-        <li>iFood para Entregadores</li>
-    </ul>
+      </ul>
+      <p class="muted small"><em>Aplicativos suportados:</em> Uber Driver, 99 Motorista, InDrive e iFood para Entregadores.</p>
+    </section>
 
-    <h2>2. COMO TRATAMOS SUAS INFORMAÇÕES</h2>
-    <p>
-        Levamos sua privacidade a sério. Seus dados são tratados da seguinte forma:
-    </p>
-    <ul>
+    <section id="tratamento" class="card" aria-labelledby="tratamento-heading">
+      <h2 id="tratamento-heading">2. Como tratamos suas informações</h2>
+      <ul>
         <li><strong>Processamento Local:</strong> As estatísticas de corridas e chamadas são sempre processadas e armazenadas localmente no seu dispositivo.</li>
         <li><strong>Armazenamento em Nuvem (Versão PRO):</strong> Ao optar por fazer um backup, suas estatísticas são enviadas de forma segura para nossos servidores (Firebase) e mantidas por 30 dias, com o único objetivo de permitir a restauração dos dados caso você troque de aparelho.</li>
-        <li><strong>Gerenciamento de Conta:</strong> Suas informações de login (nome e e-mail) são armazenadas de forma segura no Firebase para identificar sua conta e gerenciar sua assinatura PRO.</li>
-    </ul>
+        <li><strong>Gerenciamento de Conta:</strong> Suas informações de login (nome e e‑mail) são armazenadas de forma segura no Firebase para identificar sua conta e gerenciar sua assinatura PRO.</li>
+      </ul>
+    </section>
 
-    <h2>3. COMPARTILHAMENTO DE DADOS</h2>
-    <p>
-        Não compartilhamos suas informações pessoais com terceiros, exceto nas seguintes situações:
-    </p>
-    <ul>
-        <li><strong>Anúncios (Google AdMob) - Versão Gratuita:</strong> Na versão gratuita do aplicativo, algumas informaçoes de uso do aplicativo são coletadas e processadas pelo SDK do Google AdMob para exibição de anúncios relevantes. Não coletamos ou compartilhamos informações pessoais dos usuários com terceiros. Para mais detalhes sobre como o Google trata seus dados, recomendamos a leitura da Política de Privacidade do Google AdMob.</li>
+    <section id="compartilhamento" class="card" aria-labelledby="compartilhamento-heading">
+      <h2 id="compartilhamento-heading">3. Compartilhamento de dados</h2>
+      <ul>
+        <li><strong>Anúncios (Google AdMob) – Versão Gratuita:</strong> Na versão gratuita do aplicativo, algumas informações de uso do aplicativo são coletadas e processadas pelo SDK do Google AdMob para exibição de anúncios relevantes. Não coletamos ou compartilhamos informações pessoais dos usuários com terceiros. Para mais detalhes sobre como o Google trata seus dados, recomendamos a leitura da Política de Privacidade do Google AdMob.</li>
         <li><strong>Serviços de Backend (Firebase):</strong> Utilizamos a plataforma Firebase (do Google) para as funcionalidades de autenticação (Login com Google) e para o armazenamento seguro do backup de dados dos usuários PRO.</li>
-    </ul>
+      </ul>
+    </section>
 
-    <h2>4. VERSÃO PRO</h2>
-    <p>
-        Oferecemos uma assinatura opcional, a "Versão PRO", que garante os seguintes benefícios:
-    </p>
-    <ul>
+    <section id="pro" class="card" aria-labelledby="pro-heading">
+      <h2 id="pro-heading">4. Versão PRO</h2>
+      <ul>
         <li><strong>Remoção de Anúncios:</strong> A experiência de uso se torna livre de qualquer publicidade.</li>
-        <li><strong>Backup Temporário:</strong> Suas estatísticas podem ser salvas em nuvem por 30 dias para sua segurança e conveniênncia, de forma totalmente manual.</li>
-    </ul>
-    <p>
-        A compra é gerenciada através da Google Play Store.
-    </p>
+        <li><strong>Backup Temporário:</strong> Suas estatísticas podem ser salvas em nuvem por 30 dias para sua segurança e conveniência, de forma totalmente manual.</li>
+      </ul>
+      <p>A compra e a gestão da assinatura são realizadas pela Google Play Store.</p>
+    </section>
 
-    <h2>5. CONTATO</h2>
-    <p>
-        Se você tiver dúvidas, sugestões ou quiser exercer seus direitos relacionados à privacidade, entre em contato conosco através do e-mail: <span class="contact-info">suporte@zecaapp.com.br</span>.
-    </p>
-</div>
+    <section id="contato" class="card" aria-labelledby="contato-heading">
+      <h2 id="contato-heading">5. Contato</h2>
+      <p>Se você tiver dúvidas, sugestões ou quiser exercer seus direitos relacionados à privacidade, entre em contato conosco através do e‑mail <a href="mailto:suporte@zecaapp.com.br">suporte@zecaapp.com.br</a>.</p>
+    </section>
 
+    <section id="isencao" class="card" aria-labelledby="isencao-heading">
+      <h2 id="isencao-heading">6. Isenção de responsabilidade</h2>
+      <div class="callout">
+        <p>O aplicativo Zeca é uma ferramenta auxiliar de análise e estatísticas. O desenvolvedor <strong>não garante</strong> a disponibilidade contínua, a ausência de falhas ou a compatibilidade com todos os dispositivos ou versões dos aplicativos suportados.</p>
+        <p>O uso do aplicativo é de inteira responsabilidade do usuário. O Zeca <strong>não se responsabiliza por perdas financeiras, oportunidades de corridas perdidas, falhas de funcionamento, interrupções de serviço ou quaisquer danos diretos ou indiretos</strong> resultantes do uso ou da incapacidade de uso do aplicativo.</p>
+        <p>A assinatura PRO ou o uso da versão gratuita <strong>não constituem garantia de ganhos</strong>, de corridas aceitas ou de funcionamento ininterrupto dos aplicativos de terceiros (Uber, 99, InDrive, iFood, entre outros).</p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="small">© <span id="year"></span> Zeca. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
